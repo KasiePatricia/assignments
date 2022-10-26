@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="container">
+    <header class="header">
+        <div>
+            <h2>Famzy</h2>
+            <p>service@famzy.uk</p>
+        </div>
+        <div class="demo">
+            <i class="bi bi-globe"></i>
+            <a href="./index.html">Sign In</a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="form_wrapper">
+            <div class="form_container">
+                <div>
+                    <h1>Registeration Form</h1>
+                </div>
+                <div class="row clearfix">
+                    <div>
+                        <form action="./success.html">
+                            <div class="input_field">
+                                <span><i class="bi bi-envelope-fill" aria-hidden="true"></i></span>
+                                <input type="email" name="email" id="email" placeholder="Email" class="main_input" required>
+                            </div>
+                            <div class="input_field">
+                                <span><i class="bi bi-lock-fill" aria-hidden="true"></i></span>
+                                <input type="password" name="password" id="password" placeholder="Password" class="main_input" required>
+                            </div>
+                            <div class="input_field">
+                                <span><i class="bi bi-lock-fill" aria-hidden="true"></i></span>
+                                <input type="password" name="password" id="password" placeholder=" Re-type Password" class="main_input" required>
+                            </div>
+                            <div class="row reg_flex">
+                                <div class="col_half">
+                                    <div class="input_field">
+                                        <span><i class="bi bi-person-fill" aria-hidden="true"></i></span>
+                                        <input type="text" name="name" id="fname" placeholder="First Name" class="main_input" required>
+                                    </div>
+                                </div>
+                                <div class="col_half">
+                                    <div class="input_field">
+                                        <span><i class="bi bi-person-fill" aria-hidden="true"></i></span>
+                                        <input type="text" name="name" id="lname" placeholder="Last Name" class="main_input" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input_field select_option">
+                                <select>
+                                    <option>Select your Gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Others</option>
+                                </select>
+                                <div class="select_arrow"></div>
+                            </div>
+                            <div class="row reg_flex2">
+                                <div class="col_half">
+                                    <div class="input_field">
+                                        <input type="date" name="date" id="date">
+                                    </div>
+                                </div>
+                                <div class="col_half">
+                                    <div class="input_field">
+                                        <label for="color">Favourite Color:</label>
+                                        <input type="color" name="color" id="color">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input_field checkbox_option">
+                                <input type="checkbox" id="cb1">
+                                <label for="cb1">I agree with terms and conditions</label>
+                            </div>
+                            <div class="input_field checkbox_option">
+                                <input type="checkbox" id="cb2">
+                                <label for="cb2">I want to receive the newsletter</label>
+                            </div>
+                          <input class="button" type="submit" value="Register" />
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div>
+            <p>Copyright&copy; 2016. All Rights Reserved | Privacy Policy</p> 
+            <p>Designed by Kasie</p>
+        </div>
+    </footer>
+</body>
+</html>

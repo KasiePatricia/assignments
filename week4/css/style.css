@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;700&family=Lexend:wght@300;500;700&family=Poppins:wght@300;400&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0deg, 0%, 95%);
+}
+
+main.grid {
+    display: grid;
+    place-items: center;
+    background-color: hsl(231, 39%, 14%);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.wrapper .card-container {
+    display: flex;
+}
+
+.card-container .card {
+    width: 100%;
+    max-width: 235px;
+    height: 380px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: hsl(0deg, 0%, 100%);;
+}
+
+.card-container .card:nth-child(1) {
+    background-color: hsl(31deg, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+}
+
+.card-container .card:nth-child(2) {
+    background-color: hsl(184deg, 100%, 22%);
+}
+
+.card-container .card:nth-child(3) {
+    background-color: hsl(179deg, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.content .icon {
+    width: 50px;
+}
+
+.content h2 {
+    letter-spacing: 1px;
+    font-size: 26px;
+    color: hsl(0deg, 0%, 94%);
+    font-family: "Big Shoulders Display", cursive;
+}
+
+p, button{
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.content p {
+    letter-spacing: 0.2px;
+    line-height: 1.8;
+    font-size: 11px;
+    color: hsl(0deg, 0%, 100%, 0.75);
+    font-weight: 300;
+}
+
+.cta_btn .btn {
+    padding: 0.8em 1.8em;
+    border-radius: 50px;
+    background-color: hsl(0deg, 0%, 95%);
+    border: 2px solid hsl(0deg, 0%, 95%);
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 300ms ease-out;
+}
+
+.cta_btn .btn:hover {
+    scale: 1.03;
+    color: hsl(0deg, 0%, 95%);
+    background-color: transparent;
+}
+
+.card:nth-child(1) button {
+    color: hsl(31deg, 77%, 52%);
+}
+
+.card:nth-child(2) button {
+    color: hsl(184deg, 100%, 22%);
+}
+
+.card:nth-child(3) button {
+    color: hsl(179deg, 100%, 13%);
+}
+
+.pilot {
+    display: inline-block;
+    position: fixed;
+    bottom: 1rem;
+    background-color: hsl(244, 82%, 67%);
+    font-size: 12px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-family: Poppins, sans-serif;
+    color: hsl(0deg, 0%, 100%);
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.4);
+    border: 2px solid hsl(0deg, 0%, 100%);
+}
+
+.real-right {
+    right: 1rem;
+}
+
+.real-left {
+    left: 1rem;
+}
+
+@media (max-width: 680px){
+    .card-container{
+        flex-direction: column;
+    }
+    .card-container .card:nth-child(1) {
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .card-container .card:nth-child(3) {
+        border-radius: 0 0 5px 5px;
+    }
+    
+}
+
+/* Grid */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: clamp(5px, 2vw, 12px);
+    width: min(100%, 500px);
+    aspect-ratio: 1/0.7;
+}
+
+.grid-container .orange {
+    background-color: hsl(14, 84%, 52%);
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+}
+
+.grid-container .yellow {
+    background-color: hsl(39, 100%, 50%);
+    grid-column: 5 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.grid-container .green {
+    background-color: hsl(142, 94%, 34%);
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 2;
+}
+
+.grid-container .blue {
+    background-color: hsl(199, 99%, 50%);
+    grid-column: 4 / span 3;
+    grid-row: 3 / span 1;
+}
+
+.grid-container .blue:last-child {
+    background-color: hsl(199, 99%, 50%);
+    grid-row: 4 / span 1;
+}
